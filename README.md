@@ -39,11 +39,11 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(MedicalData)
-insurance %>%   
-  select_if(is.numeric) %>% 
-  gather(var,value) %>% 
-  ggplot(aes(x = value))+
-  geom_histogram()+
-  facet_wrap(~var, scales = "free")
+print("Number of rows in the insurance data:")
+nrow(insurance)
+print("Number of columns in the insurance data:")
+ncol(insurance)
+print("Variables in the data:")
+colnames(insurance)
 ```
 
