@@ -1,16 +1,17 @@
-#' List of highest-grossing games
+#' Medical insurance Data
 #'
-#' Source: https://en.wikipedia.org/wiki/Arcade_game#List_of_highest-grossing_games
+#' Source: https://www.kaggle.com/datasets/mirichoi0218/insurance
 #'
-#' @format A data frame with 6 variables: \code{game}, \code{release_year},
-#'   \code{hardware_units_sold}, \code{comment_hardware}, \code{estimated_gross_revenue},
-#'   \code{comment_revenue}
+#' @format A data frame with 7 variables: \code{age}, \code{sex},
+#'   \code{bmi}, \code{children}, \code{smoker},
+#'   \code{region}, \code{charges}
 #' \describe{
-#' \item{game}{The name of the game}
-#' \item{release_year}{The year the game was released}
-#' \item{hardware_units_sold}{The amount of hardware units sold}
-#' \item{comment_hardware}{Comment accompanying the amount of hardware units sold}
-#' \item{estimated_gross_revenue}{Estimated gross revenue in US$ with 2019 inflation}
-#' \item{comment_revenue}{Comment accompanying the amount of hardware units sold}
+#' \item{age}{age of primary beneficiary}
+#' \item{sex}{insurance contractor gender, female, male}
+#' \item{bmi}{Body mass index, providing an understanding of body, weights that are relatively high or low relative to height}
+#' \item{children}{Number of children covered by health insurance / Number of dependents}
+#' \item{smoker}{Smoking}
+#' \item{region}{ the beneficiary's residential area in the US, northeast, southeast, southwest, northwest}
+#' \item{charges}{Individual medical costs billed by health insurance}
 #' }
 "insurance"

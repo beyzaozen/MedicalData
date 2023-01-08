@@ -7,6 +7,7 @@
 The goal of MedicalData is to creare a dataset package for Medical Cost Personal Datasets from the book of Machine Learning with R by Brett Lantz. 
 
 Content
+
 Columns
 
 age: age of primary beneficiary
@@ -29,7 +30,7 @@ charges: Individual medical costs billed by health insurance
 You can install the development version of MedicalData like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+devtools::install_github("beyzaozen/MedicalData")
 ```
 
 ## Example
@@ -38,6 +39,11 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(MedicalData)
-## basic example code
+insurance %>%   
+  select_if(is.numeric) %>% 
+  gather(var,value) %>% 
+  ggplot(aes(x = value))+
+  geom_histogram()+
+  facet_wrap(~var, scales = "free")
 ```
 
