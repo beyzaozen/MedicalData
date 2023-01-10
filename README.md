@@ -46,4 +46,10 @@ ncol(insurance)
 print("Variables in the data:")
 colnames(insurance)
 ```
+Or use the function below:
+``` r
+get_data <- function(){
+  MedicalData::insurance
+}
+``` 
 
